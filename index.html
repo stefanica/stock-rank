@@ -1,23 +1,110 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Stock Forecast | Tiny stock news scraper</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang = "en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Stock Rank | Stocks News Scrapper</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="liant.js"></script>
+  </head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
 
-<body>
-
-  <h1>Template<Test/h1>
   
-  <p id = "parag"></p>
+  <body>
 
-  <script src = "liant.js"></script>
-  
-</body>
+    <!--Navigation-->
+    <!--
+    <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <script src="../../menu.js"></script>
+                <script defer src="../../visibil.js"></script>
+                <script defer src="artMan.js"></script>
+            </div>
+            
+        </div>
+    </nav>
+-->
+    
+    
+    <!--Jumbotron-->
+    <div class="container-fluid" id="jumboRegister">
+        <div class="row jumbotron">
+            <div class="col">
+                <p><span id="jumboDash">Search for a specific Stock</span> <span id="jumboInfo"></span></p>
+                <!--
+                <p id="jumboDash"></p>
+                <p id="jumboInfo"></p>
+                -->
+                
+            </div>
+
+        </div>
+    </div>
+   
+   
+
+    <div id="artId">
+    
+      <div id = "searchDiv">
+        <!--
+        <button id= "lastArticles" class="btn btn-outline-secondary btn-sm">Last 100 Articles</button>
+        <font color="grey"> <b> <span> OR </span> </b> </font> -->
+        <p>Below you can enter the stock you want to search for; keywords separated by comma</p>
+        <p>For example: MSFT, Microsoft</p>
+        <form action="#" method="POST" id = "searchForm">
+
+            <br>
+            <div>
+                <input type="submit"  class="btn btn-outline-secondary btn-sm"  value = "Search"> 
+                <input type="text" id="titleSearch" name="titleSearch">
+            </div>
+            <br>
+
+        </form>
+
+        <div>
+            <font color="grey"> <b> <p id = "infoParag"></p> </b> </font>
+        </div>
+    </div>
+
+    <!--parent div used to append child-->
+    <div id = "parentDiv">
+    </div>
+       
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer-->
+     <footer>
+        <div class="container-fluid padding">
+            <br>
+            <center><h5>&copy; <span id="footerSpan"> stockrank.tappgrade.com</span></h5></center> 
+        </div>
+     </footer>
+ 
+
+  </body>
 </html>
